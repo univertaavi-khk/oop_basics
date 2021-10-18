@@ -10,7 +10,7 @@ class Shape {
 }
 
 class Square extends Shape {
-	calcArea(){
+	calcPerimeter(){
 		return this.sideLength * this.sideLength;
 	}
 }
