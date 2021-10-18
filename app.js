@@ -11,18 +11,15 @@ class Shape {
 
 class Square extends Shape {
 	calcPerimeter(){
+		return this.sides * this.sideLength;
+	}
+	calcArea(){
 		return this.sideLength * this.sideLength;
 	}
 }
 
-class Triangle extends Shape {
-	calcPerimeter(){
-		return this.sides * this.sideLength;
-	}	
-}
 
 
 const square = new Square("square", 4, 5);
-const triangle = new Triangle("triangle", 3, 3)
 console.log(square.calcPerimeter());
-console.log(triangle.calcPerimeter())
+console.log(square.calcArea());
